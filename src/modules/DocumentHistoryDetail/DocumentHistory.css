@@ -1,0 +1,199 @@
+.layoutflow {
+  flex-grow: 1;
+  /* position: relative; */
+  height: 100%;
+}
+
+.chartWrapperOuter {
+  background: #e5e5e5;
+}
+
+.backLink {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-bottom: 12px;
+  position: absolute;
+  top: 90px;
+  left: 180px;
+  z-index: 6;
+}
+
+.chartWrapper {
+  height: 87vh;
+  /* position: relative; */
+}
+
+/* .layoutflow .controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+  font-size: 12px;
+}
+
+.layoutflow .controls button:first-child {
+  margin-right: 10px;
+} */
+
+.react-flow__controls-interactive {
+  display: none;
+}
+
+.checkbox .checkboxLabel {
+  font-size: 8px;
+  position: relative;
+}
+
+.checkbox label::before {
+  content: '';
+  background-color: transparent;
+  border: 1px solid #bbbcbd;
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+}
+
+.checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 3px;
+  height: 7px;
+  border: solid #0079bf;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.guidancePart {
+  padding: 10px 20px;
+  max-width: 360px;
+  margin-left: auto;
+  background: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 85px;
+  border-radius: 10px;
+  transform: translateX(100%);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.guidancePart.hideInfo {
+  right: 20px;
+  transform: translateX(0%);
+}
+.infoArrow {
+  position: absolute;
+  right: 30px;
+  top: 90px;
+  z-index: 3;
+}
+.guidancePart h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.guidancePart ul {
+  list-style: none;
+}
+
+.guidancePart .infoList {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.guidancePart .infoList label {
+  font-size: 12px;
+  line-height: 18px;
+  color: #1f2430;
+}
+
+.arrow {
+  width: 71px;
+  border: 0.5px solid;
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+}
+
+.shared .arrow {
+  border-color: #2aad1b;
+  border-style: dashed;
+}
+
+.redline .arrow {
+  border-style: dashed;
+  border-color: #ed4b4b;
+}
+
+.compare .arrow {
+  border-color: #ed4b4b;
+}
+
+.arrow:after {
+  position: 'absolute';
+  content: '';
+  border-top: 2px solid;
+}
+
+.guidancePart .infoList button {
+  background: none;
+  background: #ffffff;
+  border: 1px solid #e8ecf4;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  min-width: 88px;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #1f2430;
+}
+
+.guidancePart .infoList.shared button {
+  color: #2aad1b;
+  border-color: #2aad1b;
+}
+
+.guidancePart .infoList.redline button,
+.guidancePart .infoList.compare button {
+  color: #ed4b4b;
+  border-color: #ed4b4b;
+}
+.react-flow__handle {
+  /* min-width: 1px;
+    min-height: 1px;
+    width: 1px;
+    height: 1px;
+    background: #1a192b; */
+  /* border: none;
+    min-width: 1px;
+    min-height: 1px;
+    width: 1px;
+    height: 1px; */
+  /* position: unset;
+    min-width: 3px;
+    min-height: 3px;
+    width: 3px;
+    height: 3px;
+    border: 1px solid black; */
+}

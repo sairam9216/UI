@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  &:last-child {
+    margin-right: 0 !important;
+  }
+}
+
+@import './variable.scss';
+
+html,
+body,
+#root {
+  font-family: 'Poppins', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: $linkColor;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.page_content {
+  min-height: calc(100vh - 126px);
+}
+// For set footer bottom
+// #root {
+//   display: flex;
+//   flex-direction: column;
+// }

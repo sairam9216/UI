@@ -1,0 +1,65 @@
+.layoutflow {
+  flex-grow: 1;
+  position: relative;
+  height: 100%;
+}
+
+.layoutflow .controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+  font-size: 12px;
+}
+
+.layoutflow .controls button:first-child {
+  margin-right: 10px;
+}
+
+.react-flow__controls-interactive {
+  display: none;
+}
+
+.checkbox .checkboxLabel {
+  font-size: 10px;
+  position: relative;
+}
+
+.checkbox label::before {
+  content: '';
+  background-color: transparent;
+  border: 1px solid #bbbcbd;
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+}
+
+.checkbox input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 3px;
+  height: 7px;
+  border: solid #0079bf;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}

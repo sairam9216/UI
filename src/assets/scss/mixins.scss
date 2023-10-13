@@ -1,0 +1,6 @@
+@include defaultFontSize($fontFamily:null, $fontSize:null, $lineHeight:null, $color:null){
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    $color:$color;
+}

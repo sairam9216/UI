@@ -1,0 +1,198 @@
+@import './variable.scss';
+
+.headerShadow {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.02);
+}
+.text_center {
+  text-align: center;
+}
+.text_right {
+  text-align: right;
+}
+.inline_block {
+  display: inline-block;
+}
+.title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+.title_500 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+.title_500_normal {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: normal;
+}
+.title_small {
+  font-size: 16px;
+  line-height: 1.625rem;
+  font-weight: 500;
+}
+.link_text {
+  font-size: 14px;
+  line-height: 1.625rem;
+  font-weight: 500;
+}
+.text_upperCase {
+  text-transform: uppercase;
+}
+.relative {
+  position: relative;
+}
+.pointer {
+  cursor: pointer;
+}
+.cursorMove {
+  cursor: move;
+}
+.pointerNone {
+  pointer-events: none;
+}
+// Flex Box
+.underline {
+  text-decoration: underline;
+}
+.d_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shrink0 {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.d_flex_wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.d_flex_align {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flex_direction_col {
+  flex-direction: column;
+}
+.d_flex_align_end {
+  align-items: end;
+}
+.d_flex_content_between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.d_flex_content_center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.d_flex_content_end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.d_flex_align_start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+// ...css
+.overflow {
+  overflow: auto;
+}
+.wordBreak {
+  word-break: break-all;
+}
+.wordwrap {
+  word-break: break-word !important;
+}
+
+.singleLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.twoLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.threeLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.plusIconSection .MuiInputAdornment-positionEnd {
+  align-self: center;
+  color: #0e4394;
+}
+
+// Checkbox
+
+.checkbox .checkboxLabel {
+  font-size: 12px;
+  position: relative;
+}
+
+.checkbox label::before {
+  content: '';
+  background-color: transparent;
+  border: 1px solid #bbbcbd;
+  padding: 6px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+}
+
+.checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 3px;
+  height: 7px;
+  border: solid #0079bf;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+div[data-lastpass-icon-root] {
+  display: none !important;
+}
+.grayText{
+  color: #707070;
+  font-size: 14px;
+}
